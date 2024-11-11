@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <style>
+        canvas { background: #eee; display: block; margin: 20px auto; }
+        #restartBtn { display: none; margin-top: 10px; }
+        body { text-align: center; }
+        label, select, button { margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>打磚塊遊戲</h1>
+    <label for="difficultySelect">選擇難度:</label>
+    <select id="difficultySelect">
+        <option value="">請選擇</option>
+        <option value="easy">簡單</option>
+        <option value="medium">普通</option>
+        <option value="hard">困難</option>
+    </select>
+    <button id="restartBtn">重新開始</button>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
